@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Chat>
+
+    <div class="chat-body">
+        @foreach(var chat in Model) {
+        <a class="room-button" asp-controller="Home" asp-action="JoinRoom" asp-route-id="@chat.Id">
+            @chat.Name
+        </a>
+        }
+        <!-- <div class="message">
+        <header>Foo</header>
+        <p>This is a test message</p>
+        <footer>16:00</footer>
+    </div>
+</div>
+<div class="chat-input">
+    <input type="text" />
+    <button>Send</button> -->
+    </div>
